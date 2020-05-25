@@ -16,7 +16,7 @@ RUN pip install -r requirements.txt
 # copy project
 COPY . /usr/src/app/
 
-EXPOSE 8000
+EXPOSE 80
 
 #CMD gunicorn azure_django.wsgi:application --bind 0.0.0.0:8000
 CMD python /usr/src/app/manage.py runserver 0.0.0.0:80
